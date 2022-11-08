@@ -1,0 +1,104 @@
+div.caixa {
+  position: relative;
+  background-color: #fff;
+  padding: 0 64px 64px 64px;
+  font-size: 20px;
+  background-color: #f1f1f1;
+}
+
+div.caixa h2 {
+  color: #8a34eb;
+}
+
+div.caixa form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+div.caixa form label {
+  position: relative;
+  top: -5px;
+  font-weight: 500;
+}
+
+div.caixa form div {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+div.caixa form input {
+  padding: 16px;
+  position: relative;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+div.caixa form input:focus {
+  outline-color: #8a34eb;
+}
+
+div.caixa form div:nth-child(7) {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+}
+
+div.caixa form div span.receber_notificacoes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 4px;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #000;
+}
+
+div.caixa form input[type="checkbox"]:hover ~ span.receber_notificacoes {
+  background-color: #ccc;
+}
+
+div.caixa form input[type="checkbox"]:checked ~ span.receber_notificacoes {
+  background-color: #8a34eb;
+  border: 1px solid #8a34eb;
+}
+
+div.caixa form button {
+  top: 20px;
+  width: 200px;
+  font-size: 20px;
+  background-color: #8a34eb;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  color: #FFF;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+div.caixa form button:hover {
+  background-color: hsl(268, 97%, 51%);
+}
+
+div.caixa form a.recuperar-senha {
+  text-decoration: none;
+  font-weight: 700;
+  color: #e02682;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+div.caixa form a.recuperar-senha:hover {
+  border-bottom: 2px solid #e02682;
+}
+
+div.caixa form a.recuperar-senha:visited {
+  color: #e02682;
+}

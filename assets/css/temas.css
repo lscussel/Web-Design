@@ -1,0 +1,112 @@
+.caixa-titulo {
+  padding: 32px;
+  max-width: 100%;
+  height: auto;
+  background-color: #ffcd1f;
+  border-radius: 28px;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.caixa-titulo h1 {
+  margin-bottom: 0;
+}
+
+.caixa-titulo h4 {
+  margin: 0;
+  color: #494949;
+}
+
+.caixa-exercicios {
+  margin-top: 32px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.atividade {
+  width: 308px;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border-bottom: 4px solid #fff;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.atividade:hover {
+  border-bottom: 4px solid #ffcd1f;
+}
+
+.atividade .cabecalho h3.titulo {
+  margin: 0;
+  height: 50px;
+}
+
+.atividade .corpo .nivel-e-termos {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.atividade .corpo .nivel {
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #333;
+}
+
+.atividade .corpo .qtd-termos {
+  margin-right: 2px;
+  color: #494949;
+}
+
+.atividade .rodape {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.atividade .rodape .id-aluno {
+  font-weight: 500;
+}
+
+.atividade .rodape button {
+  color: #000;
+  border: none;
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.atividade .rodape button:hover {
+  background-color: #e02682;
+  color: #fff;
+}
+
+.a1 {
+  color: #22b14c;
+}
+
+.a2 {
+color: #00a2e8;
+}
+
+.b1 {
+  color: #ffcd1f;
+}
+
+.b2 {
+  color: #ff7f03;
+}
+
+.c1 {
+  color: #aaa;
+}
