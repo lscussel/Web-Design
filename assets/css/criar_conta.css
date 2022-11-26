@@ -35,6 +35,7 @@ div.caixa form input {
   font-size: 16px;
   border: 2px solid #333;
   border-radius: 8px;
+  transition: outline-color 0.3s ease;
 }
 
 div.caixa form input:focus {
@@ -88,17 +89,17 @@ div.caixa form button:hover {
   background-color: hsl(268, 97%, 51%);
 }
 
-div.caixa form a.recuperar-senha {
+div.caixa form a.entrar {
   text-decoration: none;
   font-weight: 700;
   color: #e02682;
   border-bottom: 2px solid #f1f1f1;
 }
 
-div.caixa form a.recuperar-senha:hover {
+div.caixa form a.entrar:hover {
   border-bottom: 2px solid #e02682;
 }
 
-div.caixa form a.recuperar-senha:visited {
+div.caixa form a.entrar:visited {
   color: #e02682;
 }

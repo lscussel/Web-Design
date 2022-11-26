@@ -1,9 +1,17 @@
 .foto-estudante {
-  max-width: 100%;
+  width: 100%;
+}
+
+.foto-cerebro-tecnicas-estudo {
+  width: 100%;
 }
 
 ol {
   list-style: decimal;
+}
+
+ol img {
+  width: 60%;
 }
 
 ol p {
@@ -21,4 +29,8 @@ u {
   text-decoration: none;
   color: #E02682;
   font-weight: 500;
+}
+
+strong {
+  font-weight: bold;
 }

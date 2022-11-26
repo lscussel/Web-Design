@@ -59,6 +59,22 @@ nav div.nav-itens.esquerda ul li a:hover {
   border-bottom: 2px solid #e02682;
 }
 
+nav div.nav-itens ul ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 200px;
+  transform: translate(-16px, -12px);
+  padding: 12px 16px 16px 16px;
+}
+
+nav div.nav-itens.esquerda ul li:hover ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
 nav div.nav-itens.esquerda ul li a.ativado {
   border-bottom: 2px solid #e02682;
 }
@@ -124,7 +140,7 @@ main div.contexto-principal p#frase-pagina-principal {
 main div.contexto-principal button#comecar_estudar_agora {
   position: absolute;
   bottom: 20%;
-  right: 5%;
+  right: 20px;
   border-radius: 8px;
   border-color: #E02682;
   background-color: #E02682;
