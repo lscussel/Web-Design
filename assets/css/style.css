@@ -170,3 +170,10 @@ main div.contexto-principal button#comecar_estudar_agora:hover {
   background-color: hsl(330, 91%, 46%);
   cursor: pointer;
 }
+
+@media screen and (max-width:  480px){
+  main div.container {
+    width: auto;
+    padding: 0px 8px;
+  }
+}
