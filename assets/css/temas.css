@@ -18,7 +18,6 @@
 
 .caixa-exercicios {
   margin-top: 32px;
-  max-width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -111,4 +110,16 @@ color: #00a2e8;
 
 .c1 {
   color: #aaa;
+}
+
+@media screen and (max-width:  660px) {
+  .atividade {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 661px) and (max-width:  940px) {
+  .atividade {
+    width: 49.5%;
+  }
 }
