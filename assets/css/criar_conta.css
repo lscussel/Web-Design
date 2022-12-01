@@ -103,3 +103,10 @@ div.caixa form a.entrar:hover {
 div.caixa form a.entrar:visited {
   color: #e02682;
 }
+
+@media screen and (max-width:  940px) {
+  main div.container div.caixa {
+    width: auto;
+    padding: 0px 8px;
+  }
+}

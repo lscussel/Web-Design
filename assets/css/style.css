@@ -23,6 +23,18 @@ nav {
   background-color: #fff;
 }
 
+nav div.menu-barras {
+  position: absolute;
+  right: 16px;
+  display: none;
+  color: #e02682;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
 nav div.nav-logo {
   min-width: 200px;
   font-size: 24px;
@@ -175,13 +187,41 @@ main div.contexto-principal button#comecar_estudar_agora:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width:  800px) {
-  nav div.nav-itens.esquerda {
+@media screen and (max-width: 800px) {
+  nav div.nav-itens {
     display: none;
+    position: absolute;
+    top: 44px;
+    right: calc(0px - 280px);
+    width: 280px;
+    height: 400px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #ccc;
+    border-top: 4px solid #fff;
   }
 
-  nav div.nav-itens.direita {
-    display: none;
+  nav div.menu-barras {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav div.menu-barras:hover ~ div.nav-itens {
+    display: flex;
+    animation: aparecer-lateralmente ease-out 1s;
+    animation-fill-mode: forwards;
+    
+  }
+
+  div.nav-itens:hover {
+    display: flex;
+    transform: translateX(-280px);
+  }
+
+  @keyframes aparecer-lateralmente {
+    100% {
+      transform: translateX(-280px);
+    }
   }
 }
 
