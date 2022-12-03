@@ -74,32 +74,31 @@ nav div.nav-itens ul ul {
   padding: 12px 16px 16px 16px;
 }
 
-nav div.nav-itens.esquerda ul li a:hover {
+nav div.nav-itens-esquerda ul li a:hover {
   border-bottom: 2px solid #e02682;
 }
 
-nav div.nav-itens.esquerda ul li:hover ul {
+nav div.nav-itens-esquerda ul li:hover ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
 }
 
-nav div.nav-itens.esquerda ul li a.ativado {
+nav div.nav-itens-esquerda ul li a.ativado {
   border-bottom: 2px solid #e02682;
 }
 
-nav div.nav-itens.direita {
-  position: absolute;
-  right: 0px;
+nav div.nav-itens-direita {
+  margin-right: 16px;
   width: 270px;
 }
 
-nav div.nav-itens.direita ul {
+nav div.nav-itens-direita ul {
   justify-content: flex-end;
 }
 
-nav div.nav-itens.direita ul li#entrar {
+nav div.nav-itens-direita ul li#entrar {
   padding: 8px 16px;
   color: #fff;
   border-radius: 8px;
@@ -107,11 +106,11 @@ nav div.nav-itens.direita ul li#entrar {
   transition: background-color 0.3s ease;
 }
 
-nav div.nav-itens.direita ul li#entrar:hover {
+nav div.nav-itens-direita ul li#entrar:hover {
   background-color: #f1f1f1;
 }
 
-nav div.nav-itens.direita ul li#criar_conta {
+nav div.nav-itens-direita ul li#criar_conta {
   padding: 8px 16px;
   color: #fff;
   background-color: #8a34eb;
@@ -119,11 +118,11 @@ nav div.nav-itens.direita ul li#criar_conta {
   transition: background-color 0.3s ease;
 }
 
-nav div.nav-itens.direita ul li#criar_conta:hover {
+nav div.nav-itens-direita ul li#criar_conta:hover {
   background-color: hsl(268, 97%, 51%);
 }
 
-nav div.nav-itens.direita ul li#criar_conta a {
+nav div.nav-itens-direita ul li#criar_conta a {
   color: #fff;
 }
 
@@ -193,12 +192,79 @@ main div.contexto-principal button#comecar_estudar_agora:hover {
     position: absolute;
     top: 44px;
     right: calc(0px - 280px);
-    width: 280px;
-    height: 400px;
+    width: 240px;
+    background-color: #aaa;
+    border-top: 4px solid #fff;
+  }
+
+  nav div.nav-itens-esquerda {
+    position: relative;
+    border-color: #aaa;
+    width: 100%;
+  }
+
+  nav div.nav-itens-esquerda > ul {
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #ccc;
-    border-top: 4px solid #fff;
+  }
+
+  nav div.nav-itens-esquerda > ul li {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  nav div.nav-itens-esquerda > ul li a {
+    color: #fff;
+  }
+
+  nav div.nav-itens-esquerda ul ul {
+
+    background: #aaa;
+  }
+
+  nav div.nav-itens-esquerda ul li:hover ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background: #aaa;
+  }
+  
+  nav div.nav-itens-direita {
+    position: relative;
+    border-color: #aaa;
+    width: 100%;
+  }
+
+  nav div.nav-itens-direita > ul {
+    display: flex;    
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  nav div.nav-itens-direita > ul li {
+    display: block;
+    width: 208px;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 32px;
+  }
+
+  nav div.nav-itens-direita > ul li a {
+    color: #fff;
+  }
+
+  nav div.nav-itens-direita ul li#entrar {
+    background-color: #e02682;
+  }
+
+  nav div.nav-itens-direita ul li#entrar:hover {
+    background-color: hsl(330, 91%, 46%);
+    cursor: pointer;
   }
 
   nav div.menu-barras {
@@ -207,17 +273,17 @@ main div.contexto-principal button#comecar_estudar_agora:hover {
   }
 
   nav div.menu-barras:hover ~ div.nav-itens {
-    display: flex;
+    display: inline-block;
     animation: aparecer-lateralmente ease-out 1s;
     animation-fill-mode: forwards;
-    
   }
 
   div.nav-itens:hover {
-    display: flex;
-    transform: translateX(-280px);
+    display: inline-block;
+    animation: aparecer-lateralmente ease-out 1s;
+    animation-fill-mode: forwards;
   }
-
+  
   @keyframes aparecer-lateralmente {
     100% {
       transform: translateX(-280px);
