@@ -38,11 +38,21 @@ div.caixa form input {
   transition: outline-color 0.3s ease;
 }
 
-div.caixa form input:focus {
+div.caixa form select {
+  padding: 16px;
+  position: relative;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  transition: outline-color 0.3s ease;
+}
+
+div.caixa form input:focus, div.caixa form select:focus {
   outline-color: #8a34eb;
 }
 
-div.caixa form div:nth-child(7) {
+
+div.caixa form div:nth-child(8) {
   margin-top: 8px;
   display: flex;
   flex-direction: row;

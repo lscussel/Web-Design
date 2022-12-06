@@ -35,8 +35,51 @@ strong {
   font-weight: bold;
 }
 
+iframe {
+  width: 360px;
+  height: 220px;
+}
+
+h3 {
+  margin-top: 0px;
+}
+
+.instituicao {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 2px solid #e02682;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+table {
+  margin-bottom: 16px;
+}
+
+table thead {
+  font-weight: bold;
+}
+
+table tr {
+  text-align: center;
+}
+
+table td {
+  padding: 0px 16px;
+}
+
 @media screen and (max-width:  940px) {
   ol iframe, ol img {
     width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  table {
+    font-size: 12px;
   }
 }
